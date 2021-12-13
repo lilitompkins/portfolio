@@ -1,0 +1,40 @@
+:root {
+  --main-blue-color: #2C7DA0;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  padding: 0;
+  max-width: 1080px;
+  margin: 0 auto;
+  float: none;
+}
+
+@media only screen and (max-width: 1112px) {
+  .container {
+    margin: 0 1rem;
+  }
+}
+
+/* Preserve iPhone X Safe Area */
+@supports(padding: max(0px)) {
+  .container {
+    padding: 0 env(safe-area-inset-right) 0 env(safe-area-inset-left);
+  }
+}
