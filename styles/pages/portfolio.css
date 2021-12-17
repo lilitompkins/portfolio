@@ -1,7 +1,38 @@
+.clearfix {
+  min-height: 100vh;
+}
+
+/* navbar */
+
+.navbar-wrapper {
+  color: var(--main-blue-color);
+  padding: 3rem 2rem;
+}
+
+.navbar {
+  display: grid;
+  grid-template-columns: 36px 1fr;
+  grid-template-rows: 36px;
+}
+
+.nav-wrapper {
+  padding-left: 66px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-wrapper ul {
+  width: 100%;
+  max-width: 276px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 /* intro */
 
-.intro {
-
+.intro-wrapper {
+  padding: 3rem 2rem;
 }
 
 .intro-text {
@@ -10,17 +41,51 @@
 
 .intro-text h1 {
   display: inline;
+  font-family: 'Playfair Display', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-size: 4.75rem;
+  font-weight: 800;
+  text-transform: uppercase;
 }
 
-.intro-text span {
-  display: inline;
+@media screen and (max-width: 768px) {
+  .intro-text h1 {
+    font-size: 4rem;
+  }
+}
+
+.projects {
+  padding: 0 2rem 3rem 2rem;
+}
+
+.project {
+  padding: 3rem 0;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.project-img {
+  grid-area: 1 / span 3;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.project-content {
+  grid-area: 1 / 5 / 1 / 7;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: var(--main-blue-color);
+  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 /* footer */
 
 .footer-wrapper {
   background: var(--main-blue-color);
-  padding: 3rem 0;
+  padding: 3rem 2rem;
   color: white;
 }
 
@@ -62,7 +127,10 @@ li.footer-nav-item {
   box-sizing: inherit;
   display: list-item;
   text-align: -webkit-match-parent;
+  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-size: 1em;
+  font-weight: 300;
   line-height: 1.625em;
   margin: 6px 0 0 0;
 }
@@ -90,7 +158,7 @@ li.footer-nav-item:hover {
   gap: 3rem;
 }
 
-@media screen and (max-width: $breakpointMedium) {
+@media screen and (max-width: 768px) {
   .footer-info {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(2, auto);
@@ -103,6 +171,8 @@ li.footer-nav-item:hover {
   grid-template-columns: 1fr;
   grid-template-rows: repeat(2, auto);
   gap: 0.5rem;
+  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 .footer-organization {
@@ -111,7 +181,7 @@ li.footer-nav-item:hover {
   align-items: center;
 }
 
-@media screen and (max-width: $breakpointMedium) {
+@media screen and (max-width: 768px) {
   .footer-organization {
     justify-content: center;
     flex-direction: column;
@@ -119,27 +189,28 @@ li.footer-nav-item:hover {
   }
 }
 
-/* .OrganizationLogo {
+.footer-organization-logo {
   display: flex;
-
-  svg {
-    width: 24px;
-    height: 24px;
-  }
-
-  @media screen and (max-width: $breakpointMedium) {
-    svg {
-      width: 48px;
-      height: 48px;
-    }
-  }
-} */
-
-.footer-organization-name {
-  /* padding: 0 0 0 10px; */
 }
 
-@media screen and (max-width: $breakpointMedium) {
+.footer-organization-logo svg {
+  width: 24px;
+  height: 24px;
+  fill: white;
+}
+
+@media screen and (max-width: 768px) {
+  .footer-organization-logo svg {
+    width: 48px;
+    height: 48px;
+  }
+}
+
+.footer-organization-name {
+  padding: 0 0 0 10px;
+}
+
+@media screen and (max-width: 768px) {
   .footer-organization-name {
     padding: 1em 0 0 0;
   }
@@ -151,12 +222,13 @@ li.footer-nav-item:hover {
   -webkit-font-smoothing: antialiased;
   box-sizing: inherit;
   font-size: 14px;
+  font-weight: 300;
   order: 2;
   flex-basis: 100%;
   margin-top: 24px;
 }
 
-@media screen and (max-width: $breakpointMedium) {
+@media screen and (max-width: 768px) {
   .footer-copyright {
     text-align: center;
   }

@@ -11,28 +11,72 @@
   </head>
 
   <body>
-    <header>
-      <code>nav section here </code>
-    </header>
+    <div class="clearfix">
+      <header>
+        <div class="safearea-top" />
 
-    <main>
-      <div class="intro">
-        <div class="intro-text">
-          <h1>
-            &quot;I don’t know anything about art- except for when I see it.&quot;
-          </h1>
-          <span>Uknown</span>
+        <div class="navbar-wrapper">
+          <div class="container">
+            <div class="navbar">
+              <div class="nav-logo">
+                <a href="/index.html">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path fill="currentColor" d="M3,5.63V19.05H0V5.63Zm4.32,6.71v8.3H4.44v-8.3Zm4.66-9V16.78H9.1V3.36ZM21.16,14.5l-5.8,5.92-2-2.05,5.91-5.92Zm1.25-4.89A1.6,1.6,0,1,0,24,11.2,1.59,1.59,0,0,0,22.41,9.61Zm-16.5-2A1.71,1.71,0,1,0,7.62,9.27,1.71,1.71,0,0,0,5.91,7.56Z" />
+                  </svg>
+                </a>
+              </div>
+              <nav class="nav-wrapper">
+                <ul class="nav-content">
+                  <li class="nav-item">
+                    <a href="/about.html">
+                      <span>About</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="/portfolio.html">
+                      <span>Portfolio</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="/contact.html">
+                      <span>Contact</span>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="portfolio">
-        <h3>Hi, I'm Lili Tompkins</h3>
-        <a href="/portfolio.html">
-          <button class="portfolio-button">
-            Portfolio
-          </button>
-        </a>
-      </div>
-    </main>
+      </header>
+  
+      <main>
+        <div class="intro-wrapper">
+          <div class="container">
+            <div class="intro">
+              <div class="intro-text">
+                <h1>
+                  &quot;I don’t know anything about art- except for when I see it.&quot;
+                </h1>
+                <span>Uknown</span>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="portfolio-wrapper">
+          <div class="container">
+            <div class="portfolio">
+              <h3>Hello, I'm Lili Tompkins</h3>
+              <a href="/portfolio.html">
+                <button class="portfolio-button">
+                  Portfolio
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
 
     <footer>
       <div class="footer-wrapper">
@@ -67,12 +111,11 @@
             <div class="footer-info">
               <div class="footer-tagline">
                 <div class="footer-organization">
-                  <!-- <Footer.OrganizationLogo>
-                    <Logo.Small
-                      color="208, 195, 186"
-                      id="footer"
-                    />
-                  </Footer.OrganizationLogo> -->
+                  <div class="footer-organization-logo">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                      <path d="M3,5.63V19.05H0V5.63Zm4.32,6.71v8.3H4.44v-8.3Zm4.66-9V16.78H9.1V3.36ZM21.16,14.5l-5.8,5.92-2-2.05,5.91-5.92Zm1.25-4.89A1.6,1.6,0,1,0,24,11.2,1.59,1.59,0,0,0,22.41,9.61Zm-16.5-2A1.71,1.71,0,1,0,7.62,9.27,1.71,1.71,0,0,0,5.91,7.56Z" />
+                    </svg>
+                  </div>
                   <div class="footer-organization-name">
                     Lili Tompkins
                   </div>
@@ -90,58 +133,3 @@
     </footer>
   </body>
 </html>
-
-
-<!-- <div class="footer-wrapper">
-  <div class="container">
-    <div class="footer">
-      <div class="footer-directory">
-        <nav class="footer-nav">
-          <ul class="footer-nav-content">
-            <li class="footer-nav-item">
-              <a href="/">
-                <span>Home</span>
-              </a>
-            </li>
-            <li class="footer-nav-item">
-              <a href="/about">
-                <span>About</span>
-              </a>
-            </li>
-            <li class="footer-nav-item">
-              <a href="/portfolio">
-                <span>Portfolio</span>
-              </a>
-            </li>
-            <li class="footer-nav-item">
-              <a href="/contact">
-                <span>Contact</span>
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-
-      <Footer.Info>
-        <Footer.Tagline>
-          <Footer.Organization>
-            <Footer.OrganizationLogo>
-              <Logo.Small
-                color="208, 195, 186"
-                id="footer"
-              />
-            </Footer.OrganizationLogo>
-            <Footer.OrganizationName>
-              Mamma Rita&apos;s Cucina
-            </Footer.OrganizationName>
-          </Footer.Organization>
-
-          <Footer.Copyright>
-            © 2021 Mamma Rita&apos;s Cucina. All Rights Reserved.
-          </Footer.Copyright>
-        </Footer.Tagline>
-      </Footer.Info>
-    </div>
-  </div>
-  <SafeArea bottom />
-</div> -->
